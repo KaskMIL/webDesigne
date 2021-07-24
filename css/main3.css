@@ -1,0 +1,108 @@
+:root{
+    --primero: #E28726;
+    --segundo: #006870;
+    --tercero: #004241;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;     /* b-siz es para eliminar*/
+}                               /*conflicto con padd y px*/
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 15px; /*1rem = 10px*/
+    font-family: 'Big Shoulders Display';
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: black;
+}
+
+h1, p, a{
+    color: blanchedalmond;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+
+}
+
+.contenedor-tarjeta{
+    max-width: 233px;
+    
+}
+
+@media (min-width:768px) {
+    .contenedor-tarjeta{
+        display: flex;
+        justify-items: center;
+        max-width: 699px;
+        min-height: 400px;
+        padding: 5rem 0 0 5rem;
+    }
+    .contenedor{
+        padding: 10rem 0;
+    }
+}
+
+
+
+
+
+.tarjeta1{
+    background-color: var(--primero);
+}
+
+.tarjeta2{
+    background-color: var(--segundo);
+}
+
+.tarjeta3{
+    background-color: var(--tercero);
+}
+
+.tarjeta1, .tarjeta2, .tarjeta3{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+}
+
+.tarjeta1 a{
+    color: var(--primero);
+}
+
+.boton1{
+    background-color: blanchedalmond;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.tarjeta2 a{
+    color: var(--segundo);
+}
+
+.boton2{
+    background-color: blanchedalmond;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.tarjeta3 a{
+    color: var(--tercero);
+}
+
+.boton3{
+    background-color: blanchedalmond;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 2rem;
+}
